@@ -1,10 +1,10 @@
 const express=require("express")
 const bcrypt=require("bcryptjs")
 const mongoose=require("mongoose")
-mongoose.connect("mongodb+srv://Pranjal:QJghEdDkm3hxSp7l@cluster0.4wkxo.mongodb.net/pranjal-auth-website")
+mongoose.connect("Your Mongo URL here")
 const { UserModel } = require("./db")
 const jwt = require("jsonwebtoken")
-const JWT_SECRET="randompranjal123"
+const JWT_SECRET="Your random password here"
 const app=express()
 const { z } = require("zod")
 app.use(express.json())
